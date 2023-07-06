@@ -7,6 +7,7 @@
     <script type="text/javascript" src="asset/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="asset/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="asset/jquery-ui.css" />
+    <link rel="icon" type="image/x-icon" href="/image/pin.png" />
     <script type="text/javascript">
       $(document).ready(function () {
         $("#tabs").tabs();
@@ -45,16 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Sejarah</a>
+              <a class="nav-link" href="#sejarah">Sejarah</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Gambar</a>
+              <a class="nav-link" href="#gambar">Gambar</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Info</a>
+              <a class="nav-link" href="#info">Info</a>
             </li>
           </ul>
           <form class="d-flex ms-auto my-2">
@@ -82,49 +83,50 @@
         </div>
       </div>
     </nav>
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image/1.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Pura Desa Puseh Laplapan</h5>
-            <p></p>
-            <div class="slider-btn">
-              <button class="btn btn-1 btn-primary">Virtual Tour</button>
-              <button class="btn btn-2 btn-warning">Video</button>
+    <div id="beranda">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pura Desa Puseh Laplapan</h5>
+              <p></p>
+              <div class="slider-btn">
+                <button class="btn btn-1 btn-primary">Virtual Tour</button>
+                <button class="btn btn-2 btn-warning">Video</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pura Dalem Laplapan</h5>
+              <p></p>
+              <div class="slider-btn">
+                <a href="https://virtualtour.haga.my.id/virtual/puradalem/index.htm" target="_blank" rel="noopener noreferrer"><button class="btn btn-1 btn-primary">Virtual Tour</button></a>
+                <button class="btn btn-2 btn-warning">Video</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="image/2.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Pura Dalem Laplapan</h5>
-            <p></p>
-            <div class="slider-btn">
-              <a href="https://virtualtour.haga.my.id/virtual/puradalem/index.htm" target="_blank" rel="noopener noreferrer"><button class="btn btn-1 btn-primary">Virtual Tour</button></a>
-              <button class="btn btn-2 btn-warning">Video</button>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     <br />
 
-    <div class="container">
+    <div class="container" id="sejarah">
       <div class="container-fluid" style="background-color: #ffffff">
         <p id="objekwisata" class="display-4" style="text-align: center; background-color: #ffffff">Sejarah</p>
         <div class="row">
@@ -150,113 +152,115 @@
       </div>
     </div>
 
-    <div id="tabs">
-      <ul>
-        <li><a href="#tabs-1">Pura Desa lan Puseh</a></li>
-        <li><a href="#tabs-2">Pura Dalem</a></li>
-      </ul>
-      <div id="tabs-1">
-        <div class="container">
-          <div class="container-fluid" style="background-color: #ffffff">
-            <p
-              id="sarana"
-              class="display-4"
-              style="text-align:center; background-
+    <div id="gambar">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Pura Desa lan Puseh</a></li>
+          <li><a href="#tabs-2">Pura Dalem</a></li>
+        </ul>
+        <div id="tabs-1">
+          <div class="container">
+            <div class="container-fluid" style="background-color: #ffffff">
+              <p
+                id="sarana"
+                class="display-4"
+                style="text-align:center; background-
                 color: #ffffff;"
-            >
-              Gambar
-            </p>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/desa1.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Agung</h5>
-                    <p class="card-text">
-                      Pura Desa menjadi tempat pusat kegiatan pelaksanaan upacara untuk kepentingan desa, pada beberapa di daerah Bali, pura desa disebut juga dengan nama Pura Bale Agung. Nama ini kemungkinan diambil dari nama bangunan yang
-                      terdapat pada bagian depan pura.<br /><br />Nama Benda : Bale Agung<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh
-                      Laplapan<br />Kondisi : Baik<br />Bahan : Ijuk<br />Panjang : 672cm<br />Lebar : 342cm<br />Tinggi : 418cm<br />
-                      Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
-                    </p>
+              >
+                Gambar
+              </p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/desa1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Agung</h5>
+                      <p class="card-text">
+                        Pura Desa menjadi tempat pusat kegiatan pelaksanaan upacara untuk kepentingan desa, pada beberapa di daerah Bali, pura desa disebut juga dengan nama Pura Bale Agung. Nama ini kemungkinan diambil dari nama bangunan
+                        yang terdapat pada bagian depan pura.<br /><br />Nama Benda : Bale Agung<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh
+                        Laplapan<br />Kondisi : Baik<br />Bahan : Ijuk<br />Panjang : 672cm<br />Lebar : 342cm<br />Tinggi : 418cm<br />
+                        Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/desa2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Pepelik</h5>
+                      <p class="card-text">
+                        Bale Pepelik (atau juga disebut Pelik Sari) adalah sebuah pelinggih yang berada ditengah-tengah dalam sebuah pura yang biasanya juga disebut dengan Bale Pileh atau Bale Tajuk.<br /><br />Nama Benda : Bale Pepelik<br />Tempat
+                        Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras<br />Panjang : 419cm<br />Lebar
+                        : 1350cm<br />Tinggi : 376cm<br />
+                        Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/desa3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Pesanekan</h5>
+                      <p class="card-text">
+                        Bale Pesanekan terletak di bagian selatan, bangunan ini berfungsi sebagai tempat istirahat, sementara persembahyangan belum dimulai, dan juga sebagai tempat sembahyang bagi pemedek yang ingin sembahyang di Pura Ratu
+                        Gede Empu Jagat.<br /><br />Nama Benda : Bale Agung<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi :
+                        Baik<br />Bahan : Ijuk<br />Panjang : 543cm<br />Lebar : 647cm<br />Tinggi : 347cm<br />
+                        Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/desa2.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Pepelik</h5>
-                    <p class="card-text">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <div class="container">
+            <div class="container-fluid" style="background-color: #ffffff">
+              <p
+                id="sarana"
+                class="display-4"
+                style="text-align:center; background-
+                color: #ffffff;"
+              >
+                Gambar
+              </p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/dalem1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Pepelik</h5>
                       Bale Pepelik (atau juga disebut Pelik Sari) adalah sebuah pelinggih yang berada ditengah-tengah dalam sebuah pura yang biasanya juga disebut dengan Bale Pileh atau Bale Tajuk.<br /><br />Nama Benda : Bale Pepelik<br />Tempat
                       Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras<br />Panjang : 419cm<br />Lebar
                       : 1350cm<br />Tinggi : 376cm<br />
                       Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
-                    </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/desa3.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Pesanekan</h5>
-                    <p class="card-text">
-                      Bale Pesanekan terletak di bagian selatan, bangunan ini berfungsi sebagai tempat istirahat, sementara persembahyangan belum dimulai, dan juga sebagai tempat sembahyang bagi pemedek yang ingin sembahyang di Pura Ratu
-                      Gede Empu Jagat.<br /><br />Nama Benda : Bale Agung<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi :
-                      Baik<br />Bahan : Ijuk<br />Panjang : 543cm<br />Lebar : 647cm<br />Tinggi : 347cm<br />
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/dalem2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Gede</h5>
+                      Tempat melakukan Upacara manusia yadnya.<br /><br />Nama Benda : Bale Gede<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh
+                      Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras, Ijuk<br />Panjang : 828cm<br />Lebar : 949cm<br />Tinggi : 551cm<br />
                       Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
-                    </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <hr />
-          </div>
-        </div>
-      </div>
-      <div id="tabs-2">
-        <div class="container">
-          <div class="container-fluid" style="background-color: #ffffff">
-            <p
-              id="sarana"
-              class="display-4"
-              style="text-align:center; background-
-                color: #ffffff;"
-            >
-              Gambar
-            </p>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/dalem1.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Pepelik</h5>
-                    Bale Pepelik (atau juga disebut Pelik Sari) adalah sebuah pelinggih yang berada ditengah-tengah dalam sebuah pura yang biasanya juga disebut dengan Bale Pileh atau Bale Tajuk.<br /><br />Nama Benda : Bale Pepelik<br />Tempat
-                    Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras<br />Panjang : 419cm<br />Lebar
-                    : 1350cm<br />Tinggi : 376cm<br />
-                    Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/dalem2.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Gede</h5>
-                    Tempat melakukan Upacara manusia yadnya.<br /><br />Nama Benda : Bale Gede<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov : Bali<br />Lokasi Lain : Pura Desa Puseh
-                    Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras, Ijuk<br />Panjang : 828cm<br />Lebar : 949cm<br />Tinggi : 551cm<br />
-                    Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card" style="width: 23rem">
-                  <img src="image/dalem3.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Bale Patokan</h5>
-                    Bale yang digunakan sebagai tempat pemangku duduk dan memimpin jalannya upacara.<br /><br />Nama Benda : Bale Pepelik<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov :
-                    Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras, Ijuk<br />Panjang : 378cm<br />Lebar : 403cm<br />Tinggi : 414cm<br />
-                    Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
+                <div class="col-md-4">
+                  <div class="card" style="width: 23rem">
+                    <img src="image/dalem3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Bale Patokan</h5>
+                      Bale yang digunakan sebagai tempat pemangku duduk dan memimpin jalannya upacara.<br /><br />Nama Benda : Bale Pepelik<br />Tempat Asal Des/Kec : Desa Laplapan Ubud<br />Tempat Asal Kab : Gianyar<br />Tempat Asal Prov :
+                      Bali<br />Lokasi Lain : Pura Desa Puseh Laplapan<br />Kondisi : Baik<br />Bahan : Bata, Kayu, Paras, Ijuk<br />Panjang : 378cm<br />Lebar : 403cm<br />Tinggi : 414cm<br />
+                      Tempat Pembuatan : Desa Laplapan<br />Tahun Pembuatan : 1995
+                    </div>
                   </div>
                 </div>
               </div>
@@ -266,39 +270,41 @@
       </div>
     </div>
 
-    <img src="image/denah.png" class="img-fluid" alt="..." />
+    <div id="info">
+      <img src="image/denah.png" class="img-fluid" alt="..." />
 
-    <div class="container" style="background-color: #ffffff">
-      <p class="display-4" style="text-align: center; background-color: #ffffff">Lokasi</p>
-      <hr />
-      <div class="col-md-6">
-        <p class="lead"><strong>Google Map Location</strong></p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.926048961079!2d115.27658827398952!3d-8.50656148612065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d7135ff6b27%3A0x678e157c61ddd2ce!2sPura%20Dalem%20Laplapan!5e0!3m2!1sen!2sid!4v1688411527136!5m2!1sen!2sid"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <br />
-      <hr />
-      <div class="row">
+      <div class="container" style="background-color: #ffffff">
+        <p class="display-4" style="text-align: center; background-color: #ffffff">Lokasi</p>
+        <hr />
         <div class="col-md-6">
-          <figure>
-            <img src="/image/profil.JPG" width="100%" class="img- fluid" />
-            <figcaption style="text-align: center">Gambar Priya Ganteng</figcaption>
-          </figure>
+          <p class="lead"><strong>Google Map Location</strong></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.926048961079!2d115.27658827398952!3d-8.50656148612065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d7135ff6b27%3A0x678e157c61ddd2ce!2sPura%20Dalem%20Laplapan!5e0!3m2!1sen!2sid!4v1688411527136!5m2!1sen!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="col-md-6">
-          <h2>Tim Penyusun - Kelompok Prasasti</h2>
-          <p class="lead">I Nyoman Bagus Arimbawa (20104021)<br />I Komang Teguh Wiguna (20104007)<br />I Gede Angga Dipa (19104003)<br />David Noodley Harrison (20104052)</p>
+
+        <br />
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <img src="/image/profil.JPG" width="100%" class="img- fluid" />
+              <figcaption style="text-align: center">Gambar Priya Ganteng</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <h2>Tim Penyusun - Kelompok Prasasti</h2>
+            <p class="lead">I Nyoman Bagus Arimbawa (20104021)<br />I Komang Teguh Wiguna (20104007)<br />I Gede Angga Dipa (19104003)<br />David Noodley Harrison (20104052)</p>
+          </div>
         </div>
       </div>
     </div>
-
     <br />
 
     <footer class="text-white text-center" style="background-color: #18191a">
